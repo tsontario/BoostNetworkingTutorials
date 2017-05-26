@@ -6,7 +6,7 @@
 
 boost::mutex global_stream_lock;
 
-void workerThread(boost::shared_ptr<boost::asio::io_service> io_service, int counter)
+void workerThread(boost::shared_ptr<boost::asio::io_service> io_service)
 {
     global_stream_lock.lock();
     std::cout << "Thread Start.\n";
@@ -19,28 +19,28 @@ void workerThread(boost::shared_ptr<boost::asio::io_service> io_service, int cou
     global_stream_lock.unlock();
 }
 
-size_t fac(size_t n)
+void dispatch(int i)
 {
-    if (n <= 1)
-    {
-        return 1;
-    }
-
-    boost::this_thread::sleep_for(boost::chrono::milliseconds(1000));
-    return n * fac(n-1);
+    global_stream_lock.lock();
+    std::cout << "dispatch() function for i = " << i << std::endl;
+    global_stream_lock.unlock();
 }
 
-void calculateFactorial(size_t n)
+void post(int i)
 {
     global_stream_lock.lock();
-    std::cout << "Calculating " << n << "! factorial" << std::endl;
+    std::cout << "post() function for i = " << i << std::endl;
     global_stream_lock.unlock();
+}
 
-    size_t f = fac(n);
-
-    global_stream_lock.lock();
-    std::cout << n << "! factorial = " << f << std::endl;
-    global_stream_lock.unlock();
+void running(boost::shared_ptr<boost::asio::io_service> io_service)
+{
+    for (int i=0; i<5; ++i)
+    {
+        io_service->post(boost::bind(&post, i));
+        io_service->dispatch(boost::bind(&dispatch, i));
+        boost::this_thread::sleep_for(boost::chrono::milliseconds(1000));
+    }
 }
 
 int main()
@@ -54,14 +54,9 @@ int main()
 
     boost::thread_group threads;
 
-    for (int i=1; i<6; ++i)
-    {
-        threads.create_thread(boost::bind(&workerThread, io_service, i));
-    }
+    threads.create_thread(boost::bind(&workerThread, io_service));
+    io_service->dispatch(boost::bind(&running, io_service));
 
-    io_service->post(boost::bind(&calculateFactorial, 5));
-    io_service->post(boost::bind(&calculateFactorial, 8));
-    io_service->post(boost::bind(&calculateFactorial, 10));
 
     worker.reset();
 

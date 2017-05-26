@@ -11,10 +11,12 @@ add_executable(Main BookTutorial/AsyncThreadGroup.cpp)
 add_executable(IOService BookTutorial/IOService.cpp)
 add_executable(BindTutorial BookTutorial/BindTutorial.cpp)
 add_executable(IOServiceWork BookTutorial/IOServiceWork.cpp)
+add_executable(ASIOTutorial BookTutorial/ASIOTutorial.cpp)
 
 target_link_libraries(Booster ${Boost_LIBRARIES})
 target_link_libraries(Main ${Boost_LIBRARIES})
 target_link_libraries(IOService ${Boost_LIBRARIES})
 target_link_libraries(BindTutorial ${Boost_LIBRARIES})
 target_link_libraries(IOServiceWork ${Boost_LIBRARIES})
+target_link_libraries(ASIOTutorial ${Boost_LIBRARIES})
 

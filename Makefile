@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ASIOTutorial
+
+# Build rule for target.
+ASIOTutorial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ASIOTutorial
+.PHONY : ASIOTutorial
+
+# fast build rule for target.
+ASIOTutorial/fast:
+	$(MAKE) -f CMakeFiles/ASIOTutorial.dir/build.make CMakeFiles/ASIOTutorial.dir/build
+.PHONY : ASIOTutorial/fast
+
+#=============================================================================
 # Target rules for targets named IOServiceWork
 
 # Build rule for target.
@@ -174,6 +187,33 @@ Booster: cmake_check_build_system
 Booster/fast:
 	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/build
 .PHONY : Booster/fast
+
+BookTutorial/ASIOTutorial.o: BookTutorial/ASIOTutorial.cpp.o
+
+.PHONY : BookTutorial/ASIOTutorial.o
+
+# target to build an object file
+BookTutorial/ASIOTutorial.cpp.o:
+	$(MAKE) -f CMakeFiles/ASIOTutorial.dir/build.make CMakeFiles/ASIOTutorial.dir/BookTutorial/ASIOTutorial.cpp.o
+.PHONY : BookTutorial/ASIOTutorial.cpp.o
+
+BookTutorial/ASIOTutorial.i: BookTutorial/ASIOTutorial.cpp.i
+
+.PHONY : BookTutorial/ASIOTutorial.i
+
+# target to preprocess a source file
+BookTutorial/ASIOTutorial.cpp.i:
+	$(MAKE) -f CMakeFiles/ASIOTutorial.dir/build.make CMakeFiles/ASIOTutorial.dir/BookTutorial/ASIOTutorial.cpp.i
+.PHONY : BookTutorial/ASIOTutorial.cpp.i
+
+BookTutorial/ASIOTutorial.s: BookTutorial/ASIOTutorial.cpp.s
+
+.PHONY : BookTutorial/ASIOTutorial.s
+
+# target to generate assembly for a file
+BookTutorial/ASIOTutorial.cpp.s:
+	$(MAKE) -f CMakeFiles/ASIOTutorial.dir/build.make CMakeFiles/ASIOTutorial.dir/BookTutorial/ASIOTutorial.cpp.s
+.PHONY : BookTutorial/ASIOTutorial.cpp.s
 
 BookTutorial/AsyncThreadGroup.o: BookTutorial/AsyncThreadGroup.cpp.o
 
@@ -372,11 +412,15 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... ASIOTutorial"
 	@echo "... IOServiceWork"
 	@echo "... BindTutorial"
 	@echo "... IOService"
 	@echo "... Main"
 	@echo "... Booster"
+	@echo "... BookTutorial/ASIOTutorial.o"
+	@echo "... BookTutorial/ASIOTutorial.i"
+	@echo "... BookTutorial/ASIOTutorial.s"
 	@echo "... BookTutorial/AsyncThreadGroup.o"
 	@echo "... BookTutorial/AsyncThreadGroup.i"
 	@echo "... BookTutorial/AsyncThreadGroup.s"
