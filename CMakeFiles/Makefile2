@@ -60,13 +60,161 @@ CMAKE_SOURCE_DIR = /Users/timothysmith/Code/Booster
 CMAKE_BINARY_DIR = /Users/timothysmith/Code/Booster
 
 #=============================================================================
+# Target rules for target CMakeFiles/ChallengeServer.dir
+
+# All Build rule for target.
+CMakeFiles/ChallengeServer.dir/all:
+	$(MAKE) -f CMakeFiles/ChallengeServer.dir/build.make CMakeFiles/ChallengeServer.dir/depend
+	$(MAKE) -f CMakeFiles/ChallengeServer.dir/build.make CMakeFiles/ChallengeServer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=14,15 "Built target ChallengeServer"
+.PHONY : CMakeFiles/ChallengeServer.dir/all
+
+# Include target in all.
+all: CMakeFiles/ChallengeServer.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ChallengeServer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ChallengeServer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 0
+.PHONY : CMakeFiles/ChallengeServer.dir/rule
+
+# Convenience name for target.
+ChallengeServer: CMakeFiles/ChallengeServer.dir/rule
+
+.PHONY : ChallengeServer
+
+# clean rule for target.
+CMakeFiles/ChallengeServer.dir/clean:
+	$(MAKE) -f CMakeFiles/ChallengeServer.dir/build.make CMakeFiles/ChallengeServer.dir/clean
+.PHONY : CMakeFiles/ChallengeServer.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ChallengeServer.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ASIOTimers.dir
+
+# All Build rule for target.
+CMakeFiles/ASIOTimers.dir/all:
+	$(MAKE) -f CMakeFiles/ASIOTimers.dir/build.make CMakeFiles/ASIOTimers.dir/depend
+	$(MAKE) -f CMakeFiles/ASIOTimers.dir/build.make CMakeFiles/ASIOTimers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=3,4 "Built target ASIOTimers"
+.PHONY : CMakeFiles/ASIOTimers.dir/all
+
+# Include target in all.
+all: CMakeFiles/ASIOTimers.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ASIOTimers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ASIOTimers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 0
+.PHONY : CMakeFiles/ASIOTimers.dir/rule
+
+# Convenience name for target.
+ASIOTimers: CMakeFiles/ASIOTimers.dir/rule
+
+.PHONY : ASIOTimers
+
+# clean rule for target.
+CMakeFiles/ASIOTimers.dir/clean:
+	$(MAKE) -f CMakeFiles/ASIOTimers.dir/build.make CMakeFiles/ASIOTimers.dir/clean
+.PHONY : CMakeFiles/ASIOTimers.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ASIOTimers.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SynchronousClient.dir
+
+# All Build rule for target.
+CMakeFiles/SynchronousClient.dir/all:
+	$(MAKE) -f CMakeFiles/SynchronousClient.dir/build.make CMakeFiles/SynchronousClient.dir/depend
+	$(MAKE) -f CMakeFiles/SynchronousClient.dir/build.make CMakeFiles/SynchronousClient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=22,23 "Built target SynchronousClient"
+.PHONY : CMakeFiles/SynchronousClient.dir/all
+
+# Include target in all.
+all: CMakeFiles/SynchronousClient.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SynchronousClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SynchronousClient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 0
+.PHONY : CMakeFiles/SynchronousClient.dir/rule
+
+# Convenience name for target.
+SynchronousClient: CMakeFiles/SynchronousClient.dir/rule
+
+.PHONY : SynchronousClient
+
+# clean rule for target.
+CMakeFiles/SynchronousClient.dir/clean:
+	$(MAKE) -f CMakeFiles/SynchronousClient.dir/build.make CMakeFiles/SynchronousClient.dir/clean
+.PHONY : CMakeFiles/SynchronousClient.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/SynchronousClient.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ASIOExceptions.dir
+
+# All Build rule for target.
+CMakeFiles/ASIOExceptions.dir/all:
+	$(MAKE) -f CMakeFiles/ASIOExceptions.dir/build.make CMakeFiles/ASIOExceptions.dir/depend
+	$(MAKE) -f CMakeFiles/ASIOExceptions.dir/build.make CMakeFiles/ASIOExceptions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=1,2 "Built target ASIOExceptions"
+.PHONY : CMakeFiles/ASIOExceptions.dir/all
+
+# Include target in all.
+all: CMakeFiles/ASIOExceptions.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ASIOExceptions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ASIOExceptions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 0
+.PHONY : CMakeFiles/ASIOExceptions.dir/rule
+
+# Convenience name for target.
+ASIOExceptions: CMakeFiles/ASIOExceptions.dir/rule
+
+.PHONY : ASIOExceptions
+
+# clean rule for target.
+CMakeFiles/ASIOExceptions.dir/clean:
+	$(MAKE) -f CMakeFiles/ASIOExceptions.dir/build.make CMakeFiles/ASIOExceptions.dir/clean
+.PHONY : CMakeFiles/ASIOExceptions.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ASIOExceptions.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ASIOTutorial.dir
 
 # All Build rule for target.
 CMakeFiles/ASIOTutorial.dir/all:
 	$(MAKE) -f CMakeFiles/ASIOTutorial.dir/build.make CMakeFiles/ASIOTutorial.dir/depend
 	$(MAKE) -f CMakeFiles/ASIOTutorial.dir/build.make CMakeFiles/ASIOTutorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=1,2 "Built target ASIOTutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=5,6 "Built target ASIOTutorial"
 .PHONY : CMakeFiles/ASIOTutorial.dir/all
 
 # Include target in all.
@@ -103,7 +251,7 @@ clean: CMakeFiles/ASIOTutorial.dir/clean
 CMakeFiles/IOServiceWork.dir/all:
 	$(MAKE) -f CMakeFiles/IOServiceWork.dir/build.make CMakeFiles/IOServiceWork.dir/depend
 	$(MAKE) -f CMakeFiles/IOServiceWork.dir/build.make CMakeFiles/IOServiceWork.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=11,12 "Built target IOServiceWork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=18,19 "Built target IOServiceWork"
 .PHONY : CMakeFiles/IOServiceWork.dir/all
 
 # Include target in all.
@@ -140,7 +288,7 @@ clean: CMakeFiles/IOServiceWork.dir/clean
 CMakeFiles/BindTutorial.dir/all:
 	$(MAKE) -f CMakeFiles/BindTutorial.dir/build.make CMakeFiles/BindTutorial.dir/depend
 	$(MAKE) -f CMakeFiles/BindTutorial.dir/build.make CMakeFiles/BindTutorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=3,4 "Built target BindTutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=9,10 "Built target BindTutorial"
 .PHONY : CMakeFiles/BindTutorial.dir/all
 
 # Include target in all.
@@ -177,7 +325,7 @@ clean: CMakeFiles/BindTutorial.dir/clean
 CMakeFiles/IOService.dir/all:
 	$(MAKE) -f CMakeFiles/IOService.dir/build.make CMakeFiles/IOService.dir/depend
 	$(MAKE) -f CMakeFiles/IOService.dir/build.make CMakeFiles/IOService.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=9,10 "Built target IOService"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=16,17 "Built target IOService"
 .PHONY : CMakeFiles/IOService.dir/all
 
 # Include target in all.
@@ -208,13 +356,50 @@ clean: CMakeFiles/IOService.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Booster.dir
+
+# All Build rule for target.
+CMakeFiles/Booster.dir/all:
+	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/depend
+	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=11,12,13 "Built target Booster"
+.PHONY : CMakeFiles/Booster.dir/all
+
+# Include target in all.
+all: CMakeFiles/Booster.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Booster.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Booster.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 0
+.PHONY : CMakeFiles/Booster.dir/rule
+
+# Convenience name for target.
+Booster: CMakeFiles/Booster.dir/rule
+
+.PHONY : Booster
+
+# clean rule for target.
+CMakeFiles/Booster.dir/clean:
+	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/clean
+.PHONY : CMakeFiles/Booster.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Booster.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Main.dir
 
 # All Build rule for target.
 CMakeFiles/Main.dir/all:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/depend
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=13,14 "Built target Main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=20,21 "Built target Main"
 .PHONY : CMakeFiles/Main.dir/all
 
 # Include target in all.
@@ -245,39 +430,39 @@ clean: CMakeFiles/Main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Booster.dir
+# Target rules for target CMakeFiles/AsynchronousClient.dir
 
 # All Build rule for target.
-CMakeFiles/Booster.dir/all:
-	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/depend
-	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=5,6,7,8 "Built target Booster"
-.PHONY : CMakeFiles/Booster.dir/all
+CMakeFiles/AsynchronousClient.dir/all:
+	$(MAKE) -f CMakeFiles/AsynchronousClient.dir/build.make CMakeFiles/AsynchronousClient.dir/depend
+	$(MAKE) -f CMakeFiles/AsynchronousClient.dir/build.make CMakeFiles/AsynchronousClient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=7,8 "Built target AsynchronousClient"
+.PHONY : CMakeFiles/AsynchronousClient.dir/all
 
 # Include target in all.
-all: CMakeFiles/Booster.dir/all
+all: CMakeFiles/AsynchronousClient.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Booster.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Booster.dir/all
+CMakeFiles/AsynchronousClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/AsynchronousClient.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timothysmith/Code/Booster/CMakeFiles 0
-.PHONY : CMakeFiles/Booster.dir/rule
+.PHONY : CMakeFiles/AsynchronousClient.dir/rule
 
 # Convenience name for target.
-Booster: CMakeFiles/Booster.dir/rule
+AsynchronousClient: CMakeFiles/AsynchronousClient.dir/rule
 
-.PHONY : Booster
-
-# clean rule for target.
-CMakeFiles/Booster.dir/clean:
-	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/clean
-.PHONY : CMakeFiles/Booster.dir/clean
+.PHONY : AsynchronousClient
 
 # clean rule for target.
-clean: CMakeFiles/Booster.dir/clean
+CMakeFiles/AsynchronousClient.dir/clean:
+	$(MAKE) -f CMakeFiles/AsynchronousClient.dir/build.make CMakeFiles/AsynchronousClient.dir/clean
+.PHONY : CMakeFiles/AsynchronousClient.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/AsynchronousClient.dir/clean
 
 .PHONY : clean
 

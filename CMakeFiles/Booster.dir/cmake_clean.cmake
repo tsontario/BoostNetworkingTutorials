@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o"
   "CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o"
   "CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o"
   "Booster.pdb"

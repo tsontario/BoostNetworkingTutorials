@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/timothysmith/Code/Booster
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,58 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named ChallengeServer
+
+# Build rule for target.
+ChallengeServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ChallengeServer
+.PHONY : ChallengeServer
+
+# fast build rule for target.
+ChallengeServer/fast:
+	$(MAKE) -f CMakeFiles/ChallengeServer.dir/build.make CMakeFiles/ChallengeServer.dir/build
+.PHONY : ChallengeServer/fast
+
+#=============================================================================
+# Target rules for targets named ASIOTimers
+
+# Build rule for target.
+ASIOTimers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ASIOTimers
+.PHONY : ASIOTimers
+
+# fast build rule for target.
+ASIOTimers/fast:
+	$(MAKE) -f CMakeFiles/ASIOTimers.dir/build.make CMakeFiles/ASIOTimers.dir/build
+.PHONY : ASIOTimers/fast
+
+#=============================================================================
+# Target rules for targets named SynchronousClient
+
+# Build rule for target.
+SynchronousClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SynchronousClient
+.PHONY : SynchronousClient
+
+# fast build rule for target.
+SynchronousClient/fast:
+	$(MAKE) -f CMakeFiles/SynchronousClient.dir/build.make CMakeFiles/SynchronousClient.dir/build
+.PHONY : SynchronousClient/fast
+
+#=============================================================================
+# Target rules for targets named ASIOExceptions
+
+# Build rule for target.
+ASIOExceptions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ASIOExceptions
+.PHONY : ASIOExceptions
+
+# fast build rule for target.
+ASIOExceptions/fast:
+	$(MAKE) -f CMakeFiles/ASIOExceptions.dir/build.make CMakeFiles/ASIOExceptions.dir/build
+.PHONY : ASIOExceptions/fast
 
 #=============================================================================
 # Target rules for targets named ASIOTutorial
@@ -163,6 +215,19 @@ IOService/fast:
 .PHONY : IOService/fast
 
 #=============================================================================
+# Target rules for targets named Booster
+
+# Build rule for target.
+Booster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Booster
+.PHONY : Booster
+
+# fast build rule for target.
+Booster/fast:
+	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/build
+.PHONY : Booster/fast
+
+#=============================================================================
 # Target rules for targets named Main
 
 # Build rule for target.
@@ -176,17 +241,71 @@ Main/fast:
 .PHONY : Main/fast
 
 #=============================================================================
-# Target rules for targets named Booster
+# Target rules for targets named AsynchronousClient
 
 # Build rule for target.
-Booster: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Booster
-.PHONY : Booster
+AsynchronousClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AsynchronousClient
+.PHONY : AsynchronousClient
 
 # fast build rule for target.
-Booster/fast:
-	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/build
-.PHONY : Booster/fast
+AsynchronousClient/fast:
+	$(MAKE) -f CMakeFiles/AsynchronousClient.dir/build.make CMakeFiles/AsynchronousClient.dir/build
+.PHONY : AsynchronousClient/fast
+
+BookTutorial/ASIOExceptions.o: BookTutorial/ASIOExceptions.cpp.o
+
+.PHONY : BookTutorial/ASIOExceptions.o
+
+# target to build an object file
+BookTutorial/ASIOExceptions.cpp.o:
+	$(MAKE) -f CMakeFiles/ASIOExceptions.dir/build.make CMakeFiles/ASIOExceptions.dir/BookTutorial/ASIOExceptions.cpp.o
+.PHONY : BookTutorial/ASIOExceptions.cpp.o
+
+BookTutorial/ASIOExceptions.i: BookTutorial/ASIOExceptions.cpp.i
+
+.PHONY : BookTutorial/ASIOExceptions.i
+
+# target to preprocess a source file
+BookTutorial/ASIOExceptions.cpp.i:
+	$(MAKE) -f CMakeFiles/ASIOExceptions.dir/build.make CMakeFiles/ASIOExceptions.dir/BookTutorial/ASIOExceptions.cpp.i
+.PHONY : BookTutorial/ASIOExceptions.cpp.i
+
+BookTutorial/ASIOExceptions.s: BookTutorial/ASIOExceptions.cpp.s
+
+.PHONY : BookTutorial/ASIOExceptions.s
+
+# target to generate assembly for a file
+BookTutorial/ASIOExceptions.cpp.s:
+	$(MAKE) -f CMakeFiles/ASIOExceptions.dir/build.make CMakeFiles/ASIOExceptions.dir/BookTutorial/ASIOExceptions.cpp.s
+.PHONY : BookTutorial/ASIOExceptions.cpp.s
+
+BookTutorial/ASIOTimers.o: BookTutorial/ASIOTimers.cpp.o
+
+.PHONY : BookTutorial/ASIOTimers.o
+
+# target to build an object file
+BookTutorial/ASIOTimers.cpp.o:
+	$(MAKE) -f CMakeFiles/ASIOTimers.dir/build.make CMakeFiles/ASIOTimers.dir/BookTutorial/ASIOTimers.cpp.o
+.PHONY : BookTutorial/ASIOTimers.cpp.o
+
+BookTutorial/ASIOTimers.i: BookTutorial/ASIOTimers.cpp.i
+
+.PHONY : BookTutorial/ASIOTimers.i
+
+# target to preprocess a source file
+BookTutorial/ASIOTimers.cpp.i:
+	$(MAKE) -f CMakeFiles/ASIOTimers.dir/build.make CMakeFiles/ASIOTimers.dir/BookTutorial/ASIOTimers.cpp.i
+.PHONY : BookTutorial/ASIOTimers.cpp.i
+
+BookTutorial/ASIOTimers.s: BookTutorial/ASIOTimers.cpp.s
+
+.PHONY : BookTutorial/ASIOTimers.s
+
+# target to generate assembly for a file
+BookTutorial/ASIOTimers.cpp.s:
+	$(MAKE) -f CMakeFiles/ASIOTimers.dir/build.make CMakeFiles/ASIOTimers.dir/BookTutorial/ASIOTimers.cpp.s
+.PHONY : BookTutorial/ASIOTimers.cpp.s
 
 BookTutorial/ASIOTutorial.o: BookTutorial/ASIOTutorial.cpp.o
 
@@ -323,6 +442,87 @@ BookTutorial/IOServiceWork.cpp.s:
 	$(MAKE) -f CMakeFiles/IOServiceWork.dir/build.make CMakeFiles/IOServiceWork.dir/BookTutorial/IOServiceWork.cpp.s
 .PHONY : BookTutorial/IOServiceWork.cpp.s
 
+ClientServer/asynchronousclient.o: ClientServer/asynchronousclient.cpp.o
+
+.PHONY : ClientServer/asynchronousclient.o
+
+# target to build an object file
+ClientServer/asynchronousclient.cpp.o:
+	$(MAKE) -f CMakeFiles/AsynchronousClient.dir/build.make CMakeFiles/AsynchronousClient.dir/ClientServer/asynchronousclient.cpp.o
+.PHONY : ClientServer/asynchronousclient.cpp.o
+
+ClientServer/asynchronousclient.i: ClientServer/asynchronousclient.cpp.i
+
+.PHONY : ClientServer/asynchronousclient.i
+
+# target to preprocess a source file
+ClientServer/asynchronousclient.cpp.i:
+	$(MAKE) -f CMakeFiles/AsynchronousClient.dir/build.make CMakeFiles/AsynchronousClient.dir/ClientServer/asynchronousclient.cpp.i
+.PHONY : ClientServer/asynchronousclient.cpp.i
+
+ClientServer/asynchronousclient.s: ClientServer/asynchronousclient.cpp.s
+
+.PHONY : ClientServer/asynchronousclient.s
+
+# target to generate assembly for a file
+ClientServer/asynchronousclient.cpp.s:
+	$(MAKE) -f CMakeFiles/AsynchronousClient.dir/build.make CMakeFiles/AsynchronousClient.dir/ClientServer/asynchronousclient.cpp.s
+.PHONY : ClientServer/asynchronousclient.cpp.s
+
+ClientServer/challengeserver.o: ClientServer/challengeserver.cpp.o
+
+.PHONY : ClientServer/challengeserver.o
+
+# target to build an object file
+ClientServer/challengeserver.cpp.o:
+	$(MAKE) -f CMakeFiles/ChallengeServer.dir/build.make CMakeFiles/ChallengeServer.dir/ClientServer/challengeserver.cpp.o
+.PHONY : ClientServer/challengeserver.cpp.o
+
+ClientServer/challengeserver.i: ClientServer/challengeserver.cpp.i
+
+.PHONY : ClientServer/challengeserver.i
+
+# target to preprocess a source file
+ClientServer/challengeserver.cpp.i:
+	$(MAKE) -f CMakeFiles/ChallengeServer.dir/build.make CMakeFiles/ChallengeServer.dir/ClientServer/challengeserver.cpp.i
+.PHONY : ClientServer/challengeserver.cpp.i
+
+ClientServer/challengeserver.s: ClientServer/challengeserver.cpp.s
+
+.PHONY : ClientServer/challengeserver.s
+
+# target to generate assembly for a file
+ClientServer/challengeserver.cpp.s:
+	$(MAKE) -f CMakeFiles/ChallengeServer.dir/build.make CMakeFiles/ChallengeServer.dir/ClientServer/challengeserver.cpp.s
+.PHONY : ClientServer/challengeserver.cpp.s
+
+ClientServer/synchronousclient.o: ClientServer/synchronousclient.cpp.o
+
+.PHONY : ClientServer/synchronousclient.o
+
+# target to build an object file
+ClientServer/synchronousclient.cpp.o:
+	$(MAKE) -f CMakeFiles/SynchronousClient.dir/build.make CMakeFiles/SynchronousClient.dir/ClientServer/synchronousclient.cpp.o
+.PHONY : ClientServer/synchronousclient.cpp.o
+
+ClientServer/synchronousclient.i: ClientServer/synchronousclient.cpp.i
+
+.PHONY : ClientServer/synchronousclient.i
+
+# target to preprocess a source file
+ClientServer/synchronousclient.cpp.i:
+	$(MAKE) -f CMakeFiles/SynchronousClient.dir/build.make CMakeFiles/SynchronousClient.dir/ClientServer/synchronousclient.cpp.i
+.PHONY : ClientServer/synchronousclient.cpp.i
+
+ClientServer/synchronousclient.s: ClientServer/synchronousclient.cpp.s
+
+.PHONY : ClientServer/synchronousclient.s
+
+# target to generate assembly for a file
+ClientServer/synchronousclient.cpp.s:
+	$(MAKE) -f CMakeFiles/SynchronousClient.dir/build.make CMakeFiles/SynchronousClient.dir/ClientServer/synchronousclient.cpp.s
+.PHONY : ClientServer/synchronousclient.cpp.s
+
 udp_client_server/KeyProgram.o: udp_client_server/KeyProgram.cpp.o
 
 .PHONY : udp_client_server/KeyProgram.o
@@ -349,33 +549,6 @@ udp_client_server/KeyProgram.s: udp_client_server/KeyProgram.cpp.s
 udp_client_server/KeyProgram.cpp.s:
 	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.s
 .PHONY : udp_client_server/KeyProgram.cpp.s
-
-udp_client_server/UDPClient.o: udp_client_server/UDPClient.cpp.o
-
-.PHONY : udp_client_server/UDPClient.o
-
-# target to build an object file
-udp_client_server/UDPClient.cpp.o:
-	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o
-.PHONY : udp_client_server/UDPClient.cpp.o
-
-udp_client_server/UDPClient.i: udp_client_server/UDPClient.cpp.i
-
-.PHONY : udp_client_server/UDPClient.i
-
-# target to preprocess a source file
-udp_client_server/UDPClient.cpp.i:
-	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.i
-.PHONY : udp_client_server/UDPClient.cpp.i
-
-udp_client_server/UDPClient.s: udp_client_server/UDPClient.cpp.s
-
-.PHONY : udp_client_server/UDPClient.s
-
-# target to generate assembly for a file
-udp_client_server/UDPClient.cpp.s:
-	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.s
-.PHONY : udp_client_server/UDPClient.cpp.s
 
 udp_client_server/UDPServer.o: udp_client_server/UDPServer.cpp.o
 
@@ -410,14 +583,25 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... ChallengeServer"
+	@echo "... ASIOTimers"
+	@echo "... SynchronousClient"
+	@echo "... ASIOExceptions"
 	@echo "... ASIOTutorial"
+	@echo "... rebuild_cache"
 	@echo "... IOServiceWork"
 	@echo "... BindTutorial"
 	@echo "... IOService"
-	@echo "... Main"
 	@echo "... Booster"
+	@echo "... Main"
+	@echo "... AsynchronousClient"
+	@echo "... BookTutorial/ASIOExceptions.o"
+	@echo "... BookTutorial/ASIOExceptions.i"
+	@echo "... BookTutorial/ASIOExceptions.s"
+	@echo "... BookTutorial/ASIOTimers.o"
+	@echo "... BookTutorial/ASIOTimers.i"
+	@echo "... BookTutorial/ASIOTimers.s"
 	@echo "... BookTutorial/ASIOTutorial.o"
 	@echo "... BookTutorial/ASIOTutorial.i"
 	@echo "... BookTutorial/ASIOTutorial.s"
@@ -433,12 +617,18 @@ help:
 	@echo "... BookTutorial/IOServiceWork.o"
 	@echo "... BookTutorial/IOServiceWork.i"
 	@echo "... BookTutorial/IOServiceWork.s"
+	@echo "... ClientServer/asynchronousclient.o"
+	@echo "... ClientServer/asynchronousclient.i"
+	@echo "... ClientServer/asynchronousclient.s"
+	@echo "... ClientServer/challengeserver.o"
+	@echo "... ClientServer/challengeserver.i"
+	@echo "... ClientServer/challengeserver.s"
+	@echo "... ClientServer/synchronousclient.o"
+	@echo "... ClientServer/synchronousclient.i"
+	@echo "... ClientServer/synchronousclient.s"
 	@echo "... udp_client_server/KeyProgram.o"
 	@echo "... udp_client_server/KeyProgram.i"
 	@echo "... udp_client_server/KeyProgram.s"
-	@echo "... udp_client_server/UDPClient.o"
-	@echo "... udp_client_server/UDPClient.i"
-	@echo "... udp_client_server/UDPClient.s"
 	@echo "... udp_client_server/UDPServer.o"
 	@echo "... udp_client_server/UDPServer.i"
 	@echo "... udp_client_server/UDPServer.s"

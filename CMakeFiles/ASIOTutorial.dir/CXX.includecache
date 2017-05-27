@@ -7,9 +7,9 @@
 #IncludeRegexTransform: 
 
 /Users/timothysmith/Code/Booster/BookTutorial/ASIOTutorial.cpp
-boost/asio.hpp
--
 boost/shared_ptr.hpp
+-
+boost/asio.hpp
 -
 boost/thread.hpp
 -

@@ -57,10 +57,15 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/ChallengeServer.dir/DependInfo.cmake"
+  "CMakeFiles/ASIOTimers.dir/DependInfo.cmake"
+  "CMakeFiles/SynchronousClient.dir/DependInfo.cmake"
+  "CMakeFiles/ASIOExceptions.dir/DependInfo.cmake"
   "CMakeFiles/ASIOTutorial.dir/DependInfo.cmake"
   "CMakeFiles/IOServiceWork.dir/DependInfo.cmake"
   "CMakeFiles/BindTutorial.dir/DependInfo.cmake"
   "CMakeFiles/IOService.dir/DependInfo.cmake"
-  "CMakeFiles/Main.dir/DependInfo.cmake"
   "CMakeFiles/Booster.dir/DependInfo.cmake"
+  "CMakeFiles/Main.dir/DependInfo.cmake"
+  "CMakeFiles/AsynchronousClient.dir/DependInfo.cmake"
   )

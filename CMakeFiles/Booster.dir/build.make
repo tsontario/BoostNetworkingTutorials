@@ -57,33 +57,9 @@ include CMakeFiles/Booster.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Booster.dir/flags.make
 
-CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o: CMakeFiles/Booster.dir/flags.make
-CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o: udp_client_server/UDPClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o -c /Users/timothysmith/Code/Booster/udp_client_server/UDPClient.cpp
-
-CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/timothysmith/Code/Booster/udp_client_server/UDPClient.cpp > CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.i
-
-CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/timothysmith/Code/Booster/udp_client_server/UDPClient.cpp -o CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.s
-
-CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o.requires:
-
-.PHONY : CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o.requires
-
-CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o.provides: CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Booster.dir/build.make CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o.provides.build
-.PHONY : CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o.provides
-
-CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o.provides.build: CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o
-
-
 CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o: CMakeFiles/Booster.dir/flags.make
 CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o: udp_client_server/KeyProgram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o -c /Users/timothysmith/Code/Booster/udp_client_server/KeyProgram.cpp
 
 CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.i: cmake_force
@@ -107,7 +83,7 @@ CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o: CMakeFiles/Booster.dir/flags.make
 CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o: udp_client_server/UDPServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o -c /Users/timothysmith/Code/Booster/udp_client_server/UDPServer.cpp
 
 CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.i: cmake_force
@@ -131,14 +107,12 @@ CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o.provides.build: CMakeFi
 
 # Object files for target Booster
 Booster_OBJECTS = \
-"CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o" \
 "CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o" \
 "CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o"
 
 # External object files for target Booster
 Booster_EXTERNAL_OBJECTS =
 
-Booster: CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o
 Booster: CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o
 Booster: CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o
 Booster: CMakeFiles/Booster.dir/build.make
@@ -146,7 +120,7 @@ Booster: /usr/local/lib/libboost_system-mt.dylib
 Booster: /usr/local/lib/libboost_filesystem-mt.dylib
 Booster: /usr/local/lib/libboost_thread-mt.dylib
 Booster: CMakeFiles/Booster.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Booster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/timothysmith/Code/Booster/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Booster"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Booster.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,7 +128,6 @@ CMakeFiles/Booster.dir/build: Booster
 
 .PHONY : CMakeFiles/Booster.dir/build
 
-CMakeFiles/Booster.dir/requires: CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o.requires
 CMakeFiles/Booster.dir/requires: CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o.requires
 CMakeFiles/Booster.dir/requires: CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o.requires
 

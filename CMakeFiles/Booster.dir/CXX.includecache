@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/Users/timothysmith/Code/Booster/udp_client_server/KeyProgram.cpp
+ctime
+-
+string
+-
+iostream
+-
+boost/asio.hpp
+-
+UDPServer.h
+/Users/timothysmith/Code/Booster/udp_client_server/UDPServer.h
+
 /Users/timothysmith/Code/Booster/udp_client_server/UDPClient.cpp
 UDPClient.h
 /Users/timothysmith/Code/Booster/udp_client_server/UDPClient.h
@@ -27,18 +39,6 @@ boost/array.hpp
 -
 boost/asio/ip/udp.hpp
 -
-
-/Users/timothysmith/Code/Booster/udp_client_server/main.cpp
-ctime
--
-string
--
-iostream
--
-boost/asio.hpp
--
-UDPServer.h
-/Users/timothysmith/Code/Booster/udp_client_server/UDPServer.h
 
 /usr/local/include/boost/array.hpp
 boost/detail/workaround.hpp

@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/timothysmith/Code/Booster/udp_client_server/KeyProgram.cpp" "/Users/timothysmith/Code/Booster/CMakeFiles/Booster.dir/udp_client_server/KeyProgram.cpp.o"
-  "/Users/timothysmith/Code/Booster/udp_client_server/UDPClient.cpp" "/Users/timothysmith/Code/Booster/CMakeFiles/Booster.dir/udp_client_server/UDPClient.cpp.o"
   "/Users/timothysmith/Code/Booster/udp_client_server/UDPServer.cpp" "/Users/timothysmith/Code/Booster/CMakeFiles/Booster.dir/udp_client_server/UDPServer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
